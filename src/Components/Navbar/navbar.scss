@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 80px;
+        padding: 0 2rem ;
+        background-color: whitesmoke;
+        color: black;
+
+        a {
+            color: black;
+            margin: 0 2rem;
+            text-decoration: none;
+        }
+
+        .contact {
+            color: white;
+            background-color: blue;
+            padding: 1rem 1rem;
+            border-radius: 50px;
+        }
+
+        .links::after {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 1px; /* Szerokość pionowej kreski */
+            background-color: #ff1616; /* Kolor pionowej kreski */
+            right: 0;
+            top: 0;
+        }
+
+        .navBtn {
+            padding: 5px;
+            cursor: pointer;
+            background: transparent;
+            border: none;
+            overflow: none;
+            visibility: hidden;
+            opacity: 0;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+
+        .navBtn {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: whitesmoke;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 1.5rem;
+            transition: all 0.5s ease;
+            transform: translateY(-100vh);
+        }
+
+        .responsiveNav {
+            transform: none;
+        }
+
+        .navCloseBtn {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+        }
+
+
+    }
+}
