@@ -11,7 +11,7 @@ const Navbar = () => {
   }
   return (
       <header>
-        <h3>Logo</h3>
+        <img src="" width="50px" height="50px" alt="" />
         <nav ref={navRef}>
           <a href="#" className='links'>O MNIE</a>
           <a href="#" className='links'>USŁUGI</a>

@@ -26,16 +26,6 @@
             border-radius: 50px;
         }
 
-        .links::after {
-            content: "";
-            position: absolute;
-            height: 100%;
-            width: 1px; /* Szerokość pionowej kreski */
-            background-color: #ff1616; /* Kolor pionowej kreski */
-            right: 0;
-            top: 0;
-        }
-
         .navBtn {
             padding: 5px;
             cursor: pointer;
