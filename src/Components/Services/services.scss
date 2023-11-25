@@ -1,3 +1,31 @@
-div {
-    background-color: black;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald:wght@400;700&display=swap');
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    flex-direction: column;
+    background-color: white;
+
+    .services {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8rem;
+
+        .box {
+            background-color: rgb(73, 73, 167);
+            width: 400px;
+            height: 500px;
+            overflow: hidden;
+            text-align: center;
+            -webkit-box-shadow: inset 14px -14px 0px -4px rgba(121, 123, 150, 1);
+            -moz-box-shadow: inset 14px -14px 0px -4px rgba(121, 123, 150, 1);
+            box-shadow: inset 14px -14px 0px -4px rgba(121, 123, 150, 1);
+
+            .title {
+                font-size:  2rem;
+            }
+        }
+    }
 }

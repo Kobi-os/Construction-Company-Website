@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald:wght@400;700&display=swap');
+
 .Contact {
     height: 100vh;
     max-width: 1366px;
@@ -5,32 +7,39 @@
     display: flex;
     align-items: center;
     gap: 50px;
+    background-color: rgb(73, 73, 167);
+
 
     .textContainer {
         flex: 1;
         display: flex;
         flex-direction: column;
         gap: 40px;
+        color: rgb(73, 73, 167);
 
-        h1 {
-            font-size: 100px;
-            line-height: 88px;
-        } 
+        .item {
+            background-color: white;
+            padding: 10px;
+            width: 300px;
+            border-radius: 20px;
+
 
         span {
             font-weight: 300;
         }
     }
+    }
 
     .formContainer {
         flex: 1;
         position: relative;
+        
 
         .phoneSvg {
-            stroke: rebeccapurple;
+            stroke: white;
             position: absolute;
             margin: auto;
-            color: rebeccapurple;
+            color: white;
             z-index: -1;
         }
 
@@ -38,12 +47,13 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
+            
         
 
 
         input, textarea {
             padding: 20px;
-            background-color: transparent;
+            background-color: white;
             border: 1px solid white;
             color: white;
             border-radius: 5px;
@@ -51,8 +61,10 @@
 
           button {
             padding: 20px;
+            width: 100px;
+            border-radius: 50px;
             border: none;
-            background-color: rebeccapurple;
+            background-color: white;
             cursor: pointer;
             font-weight: 500;
           }
