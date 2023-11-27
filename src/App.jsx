@@ -8,18 +8,15 @@ import Contact from './Components/Contact/Contact'
 const App = () => {
   return (
     <div>
-      <section>
+
         <Navbar/>
-      </section>
-      <section>
+
         <About/>
-      </section>
-      <section>
+
         <Services/>
-      </section>
-      <section>
+
         <Contact/>
-      </section>
+
     </div>
   )
 }
