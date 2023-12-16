@@ -1,10 +1,11 @@
 import React from 'react'
 import './about.scss'
-import { motion } from 'framer-motion'
+import { motion} from 'framer-motion'
+
+
 
 const About = () => {
   return (
-
 
     <motion.div className='about'
     initial={{ opacity: 0, y: 50 }}
@@ -18,7 +19,6 @@ const About = () => {
         Co otwiera drogi do pozyskania nowych. Bardzo się z tego faktu cieszymy, jednocześnie zapraszamy do współpracy 
       </p>
     </motion.div>
-
   )
 }
 

@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import "./services.scss"
 import { motion } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
 
 const Services = () => {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { triggerOnce: true })
+
   return (
     <div className='content'>
       <h2>USŁUGI</h2>
@@ -10,7 +14,9 @@ const Services = () => {
         <motion.div className='box' 
             initial={{opacity: 0, y: 50}}
             animate={{opacity: 1, y:0}}
-            transition={{duration: 1}}>
+            transition={{duration: 1}}
+            ref={ref}
+            isInView={isInView}>
             <img src="/src/assets/images/paint.png" alt="Paint Roller" height="100px"  className="icon"/>
             <h3 className='title'>Usługi Wykończeniowe </h3>
             <ul className='list'>
@@ -25,7 +31,9 @@ const Services = () => {
         <motion.div className='box'
             initial={{opacity: 0, y: 50}}
             animate={{opacity: 1, y:0}}
-            transition={{duration: 1}}>
+            transition={{duration: 1}}
+            ref={ref}
+            isInView={isInView}>
             <img src="/src/assets/images/construction-hat.png" alt="Builder Helmet" height="100px" className="icon"/>
             <h3 className='title'>Usługi Budowlane</h3>
             <ul className='list'>
@@ -36,7 +44,9 @@ const Services = () => {
         <motion.div className='box'
             initial={{opacity: 0, y: 50}}
             animate={{opacity: 1, y:0}}
-            transition={{duration: 1}}>
+            transition={{duration: 1}}
+            ref={ref}
+            >
             <img src="/src/assets/images/wrench.png" alt="Wrench"  height="100px" className="icon"/>
             <h3 className='title'>Usługi Instalacyjne</h3>
             <ul className='list'>

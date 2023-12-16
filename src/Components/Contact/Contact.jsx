@@ -12,7 +12,7 @@ const Contact = () => {
     });
 
 
-const initial = { opacity: 0, x: -50 };
+const initial = { opacity: 0, x: -100 };
 const animate = { opacity: 1, x: 0 };
 const transition = { delay: 0.5};
 
@@ -38,7 +38,7 @@ const transition = { delay: 0.5};
       <div className="formContainer">
         <motion.form
         ref={ref}
-        initial={{opacity:0 , x: 100}}
+        initial={{opacity:0 , x: 150}}
         animate={inView ? animate : {initial}}
         transition={transition}>
             <p>Imie i Nazwisko</p>   
