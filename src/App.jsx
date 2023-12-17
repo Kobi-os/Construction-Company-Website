@@ -5,6 +5,8 @@ import Services from './Components/Services/Services'
 import './App.scss'
 import Contact from './Components/Contact/Contact'
 import Slider from './Components/Slider/Slider'
+import Gallery from './Components/Gallery/Gallery'
+
 const App = () => {
   return (
     <div>
@@ -16,6 +18,8 @@ const App = () => {
         <About/>
 
         <Services/>
+
+        <Gallery/>
 
         <Contact/>
 

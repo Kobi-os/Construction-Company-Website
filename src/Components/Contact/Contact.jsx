@@ -24,8 +24,7 @@ const transition = { delay: 0.5};
         initial={initial}
         animate={inView ? animate : initial}
         transition={transition}
-        >
-
+      >
             <motion.div className="item" >
                 <h2>E-mail</h2>
                 <span>Marek@Dobrzyk.inpo.pl</span>
